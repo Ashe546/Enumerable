@@ -3,7 +3,7 @@ module MyEnumerable
   def all?
     array1 = []
     @list.each { |item| array1.push(item) if yield item }
-    puts array1.length == @list.length
+   return array1.length == @list.length
   end
 
   # any method
