@@ -1,9 +1,11 @@
 require_relative 'enumerable'
 class MyList
   include MyEnumerable
+
   def initialize(*argument)
     @list = argument
   end
+
   def each
     yield @list
   end
